@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (editText.getText().toString().isEmpty()){
-                    Toast.makeText(MainActivity.this, "Write something first", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Write something first please", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     textToSpeech.speak(editText.getText().toString(),TextToSpeech.QUEUE_FLUSH,null);
